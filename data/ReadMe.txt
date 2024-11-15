@@ -1,5 +1,5 @@
 user_info.txt = name, password, isMember, balance, isAdmin
-* ex: pariwatNira, admin123, 10000, admin
+* ex: pariwatNira, admin123, y, 10000, admin
 
 *isMember check if this user is member or not
 *isAdmin check if this user is an admin or not
