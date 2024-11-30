@@ -1,3 +1,0 @@
-admin,admin123,member,10000,admin
-user1,user123,member,10000,user
-user2,user678,no,10000,user
