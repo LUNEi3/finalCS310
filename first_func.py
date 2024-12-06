@@ -6,20 +6,20 @@ def main():
 
 
 def register(username, password):
-    with open("data/user_info.txt", "r") as file:
+    with open("user_info.txt", "r") as file:
         for line in file:
             stored_user = line.strip().split(",")
             if username in stored_user:
                 print("Username already exists! Try a different one.")
                 return False
 
-    with open("data/user_info.txt", "a") as file:
+    with open("user_info.txt", "a") as file:
         file.write(f"{username},{password},{'-'},{'0'},{'user'}\n")
     print("Registration successful!")
 
 
 def login(username, password):
-    with open("data/user_info.txt", "r") as file:
+    with open("user_info.txt", "r") as file:
         for line in file:
             data = line.strip().split(",")
             if data[0] == username and data[1] == password:
@@ -39,7 +39,7 @@ def reset_password(username):
         user_found = False
         updated_lines = []
         
-        with open("data/user_info.txt", "r") as file:
+        with open("user_info.txt", "r") as file:
             for line in file:
                 data = line.strip().split(",")
                 if data[0] == username:
@@ -52,7 +52,7 @@ def reset_password(username):
             print(f"Username '{username}' not found.")
             return
 
-        with open("data/user_info.txt", "w") as file:
+        with open("user_info.txt", "w") as file:
             file.write("\n".join(updated_lines) + "\n")
     except FileNotFoundError:
         print("No users are registered yet. Please register first.")
@@ -61,7 +61,7 @@ def reset_password(username):
 
 
 def isAdmin(username, password):
-    with open("data/user_info.txt", "r") as file:
+    with open("user_info.txt", "r") as file:
         for line in file:
             data = line.strip().split(",")
             if data[0] == username and data[1] == password and data[-1] == "admin":

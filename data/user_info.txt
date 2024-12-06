@@ -1,4 +1,0 @@
-admin,kGCT9=gO,member,10010,admin
-user1,Ed8K=gO,member,10000,user
-user2,Ed8KiMm,-,9900,user
-L1,kdkdkd,-,50,user

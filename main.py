@@ -154,7 +154,7 @@ def admin():
             print("Exit Admin Mode...")
             break
         elif option == '1':
-            with open("data/stock.txt") as file:
+            with open("stock.txt") as file:
                 reader = file.readlines()
                 for line in reader:
                     data = line.split(',')

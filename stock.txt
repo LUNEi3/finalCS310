@@ -1,0 +1,32 @@
+c01,iced,Americano,60,94
+c02,iced,Espresso,60,100
+c03,iced,Cappuccino,60,100
+c04,iced,Latte,55,100
+c05,iced,Mocha,60,100
+c06,iced,Green Tea,50,99
+c07,iced,Thai Tea,50,100
+c08,iced,Peach Tea,50,100
+c09,iced,Chocolate,50,100
+c10,iced,Honey Lemon,50,100
+c11,iced,Orange soda,50,100
+c12,iced,Strawberry soda,50,100
+c13,iced,Coconut Coffee,60,100
+c14,iced,Lychee Soda,50,100
+c15,iced,Blueberry Soda,50,100
+c16,iced,Mint Chocolate,60,100
+c17,iced,White Chocolate Mocha,70,100
+h01,hot,Americano,50,110
+h02,hot,Espresso,50,100
+h03,hot,Cappuccino,50,100
+h04,hot,Latte,45,100
+h05,hot,Green Tea,40,100
+h06,hot,Chocolate,40,100
+h07,hot,Milk,40,100
+h08,hot,Caramel Macchiato,50,100
+h09,hot,Almond Milk,45,100
+h10,hot,Matcha Latte,50,100
+h11,hot,Coconut Coffee,50,100
+h12,hot,White Chocolate Mocha,60,98
+h13,hot,Honey Ginger Tea,50,100
+h14,hot,Vanilla Latte,55,100
+h14,hot,Dark Chocolate,50,100

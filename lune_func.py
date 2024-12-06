@@ -38,7 +38,7 @@ def get_key():
 
 # Read data from matched username retrun str with comma
 def readData(username):
-    with open("data/user_info.txt") as file:
+    with open("user_info.txt") as file:
         reader = file.readlines()
         for line in reader:
             data = line.split(',')
@@ -64,9 +64,9 @@ def showData(data):
 
 
 def manage(menu, amt='', option='', price=''):
-    with open("data/stock.txt") as file:
+    with open("stock.txt") as file:
         reader = file.readlines()
-        with open("data/stock.txt", 'w') as output:
+        with open("stock.txt", 'w') as output:
             for line in reader:
                 data = line.split(',')
                 if menu == data[0]:
@@ -95,9 +95,9 @@ def buy(orders, username):
     tt_price = 0
 
     # Calculate total price
-    with open("data/stock.txt") as file:
+    with open("stock.txt") as file:
         reader = file.readlines()
-        with open("data/stock.txt", 'w') as file:
+        with open("stock.txt", 'w') as file:
             for line in reader:
                 data = line.split(',')
                 data[-1] = int(data[-1])
@@ -123,9 +123,9 @@ def buy(orders, username):
     print(f"Total price: {tt_price}")
 
     # Update current user's balance
-    with open("data/user_info.txt") as file:
+    with open("user_info.txt") as file:
         reader = file.readlines()
-        with open("data/user_info.txt", 'w') as file:
+        with open("user_info.txt", 'w') as file:
             for line in reader:
                 data = line.split(',')
                 if data[0] == username:
@@ -137,7 +137,7 @@ def showMenu(type):
     if type not in ['hot', 'iced']:
         print("Incorrect type of menu.")
         return False
-    with open("data/stock.txt") as file:
+    with open("stock.txt") as file:
         reader = file.readlines()
         print('-'*40)
         for line in reader:

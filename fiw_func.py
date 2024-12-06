@@ -7,7 +7,7 @@ def main():
     
 
 def isMember(username) :
-    with open("data/user_info.txt" , "r") as file1 :
+    with open("user_info.txt" , "r") as file1 :
             check_member = file1.read().splitlines()
 
             for line in check_member :
@@ -20,10 +20,10 @@ def isMember(username) :
      
 
 def register_member(username) :
-        with open("data/user_info.txt" , "r") as file1 :
+        with open("user_info.txt" , "r") as file1 :
             member_reg = file1.read().splitlines()  
 
-            with open("data/user_info.txt", "w") as file2:
+            with open("user_info.txt", "w") as file2:
                 for line in member_reg :
                     data = line.split(",")
 
@@ -35,7 +35,7 @@ def register_member(username) :
 
 
 def topup(username, amt):
-    with open("data/user_info.txt", "r") as file1:
+    with open("user_info.txt", "r") as file1:
         member_topup = file1.read().splitlines()
 
     for i in range(len(member_topup)):
@@ -52,7 +52,7 @@ def topup(username, amt):
             print("Top-up successful!")
             break
 
-    with open("data/user_info.txt", "w") as file2:
+    with open("user_info.txt", "w") as file2:
         for line in member_topup:
             file2.write(f"{line}\n")
 
