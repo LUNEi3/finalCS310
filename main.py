@@ -3,8 +3,6 @@ import fiw_func as fiw
 import lune_func as lune
 import sys
 
-# Hello world!
-
 title = """| 1. Login                                       |
 | 2. Register                                    |
 | 3. Exit                                        |"""
