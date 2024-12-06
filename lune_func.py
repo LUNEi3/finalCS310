@@ -63,14 +63,6 @@ def showData(data):
     print('-'*40)
 
 
-def isCorrectCred(cred):
-    cred = int(cred)
-    odd = True
-    for num in cred:
-        if (odd):
-            ...
-
-
 def manage(menu, amt='', option='', price=''):
     with open("data/stock.txt") as file:
         reader = file.readlines()
